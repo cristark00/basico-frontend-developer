@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*Todas las etiquetas p que esten dentro de dev*/
+        div p{
+            color: rebeccapurple;
+        }
+        p{
+            font-size: 40px;
+        }
+         /*Todas las clases seguidas del contenedor div*/
+        div > .hijoDirecto{
+            background-color: aquamarine;
+        }
+        /*Elemento que este uno a lado de otro ELEmento adyacente*/
+        div + div{
+            background-color: lightseagreen;
+        }
+        /*General de Hermanos: el hermano section que este despues de div*/
+        div ~ section{
+            background-color: magenta;
+        }
+      
+    </style>
+</head>
+<body>
+ <div>
+    <p>Descendientes</p>
+    <div>
+        <p class="hijoDirecto">Hijo Directo</p>
+        <p>Hijo Directo 2</p>
+    </div>
+ </div>
+ <div>
+    Elemento Adyacente
+ </div>
+ <section>
+    General de Hermanos
+ </section>
+ 
+</body>
+</html>
