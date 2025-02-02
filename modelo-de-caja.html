@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width: 200px;
+            height: 200px;
+        }
+        h1{
+            border: 1px solid black;
+        }
+      .positionc{
+        width: 200px;
+        height: 200px;
+        background-color: blueviolet;
+        position: relative;
+        top: 20px;
+      }
+      .positionc .item{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(13, 240, 191);
+        position: absolute;
+        right: 0;
+      }
+      nav{
+        width: 100%;
+        height: 60px;
+        background-color: aquamarine;
+        position: fixed;
+        top: 0;
+      }
+    </style>
+</head>
+<body>
+    <section class="container">
+    <div>
+        Platzi
+    </div>
+    <div>
+        master
+    </div>
+    <div>
+        master 2
+    </div>
+</section>
+<h1>Posicionamiento</h1>
+<div class="positionc">
+    <div class="item"></div>
+</div>
+<nav>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias modi, voluptates eum, deserunt, quae hic non consequatur natus cupiditate commodi dolorum inventore rem. Nam nihil et nostrum fuga asperiores omnis. </p>
+</nav>
+</body>
+</html>
