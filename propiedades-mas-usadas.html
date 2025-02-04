@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+      *{
+       
+        margin: 0;
+        padding: 0;
+      }
+       body {
+            background-color: bisque;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .card{
+            width: 400px;
+            height: 550px;
+            background-color: rgb(241, 163, 47);
+            border-radius: 25px;
+            box-shadow: 2px 4px 25px rgb(86, 86, 86);
+            display: grid;
+            grid-template-rows: 1.65fr 2fr 0.75fr 0.50fr;
+        }
+        .card:hover{
+            transition: 1000ms;
+            outline: 10px  #474747;
+        }
+       .card2{
+        position: relative;
+       }
+        .card2 img{
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;  
+            width: 100%;
+            height: 185.2px;
+            object-fit: cover;
+            position: absolute;
+        }
+        .card3{
+            background-color: rgb(32, 33, 33);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+          
+        }
+        .card3 .profile-photo{
+           width: 145px;
+           height: 145px;
+           box-sizing: border-box;
+           background-color: rgb(255, 247, 247);
+           border: 2px solid black;
+           border-radius: 50%;
+           position: absolute;
+           bottom: 51.5%;
+           margin: 0 10px;
+        }
+        .personalInfo{
+            display: flex;
+            margin-top: 40px;
+            align-items: center;
+            flex-direction: column;
+        }
+       h2, h3, h4, .redes-link, p, span{
+            color: white;
+            font-weight: 400;
+        }
+        h2{
+            margin-top: 45px;
+            font-size: 1.5rem;
+        }
+       
+       .redes{
+        margin-top: 40px;
+       display: inline-flex;
+       width: 100%;
+       justify-content: space-around;
+      
+       }
+       .redes .redes-link{
+        font-style: oblique;
+        text-decoration: none;
+        cursor: pointer;
+       }
+        .card4{
+            background-color: rgb(44, 44, 44);
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .card4 p{
+           text-align: center;
+           font-weight: bold;
+           font-size: 25px;
+           opacity: 0.8;
+        }
+        .card4 span{
+            cursor: pointer;
+            opacity: 0.3;
+        }
+        
+        .card5{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card5 .follow{
+        opacity: 0.2;
+        }
+        .card5 .follow:hover{
+
+           opacity: 0.8;
+            cursor: pointer;
+            transition: 1000ms;
+            outline: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="card">
+            <div class="card2">
+            <img src="https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=""></div>
+            <div class="card3">
+                <div class="profile-photo"></div>
+                <div class="personalInfo">
+                    <h2>Cristian Alejandro Lopez Bautista</h2>
+                    <h3>Frontend Developer</h3>
+                    <h4>🇬🇹 Guatemala</h4>
+                </div>
+                <div class="redes">
+                    <a href="#" class="redes-link">View Proyects</a>
+                    <a href="#" class="redes-link">Send Email</a>
+                 </div>
+            </div>
+            <div class="card4">
+                <div>
+                <p>700</p>
+                <span>Followers</span>
+                </div>
+                <div>
+                <p>250</p>
+                <span>Follows</span>
+                </div>
+            </div>
+            <div class="card5">
+                <p class="follow">Follow me on social media</p>
+            </div>
+        </div>
+      
+    </section>
+
+</body>
+</html>
